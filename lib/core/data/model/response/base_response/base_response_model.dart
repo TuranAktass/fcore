@@ -9,7 +9,7 @@ class BaseResponseModel<T> with _$BaseResponseModel<T> {
     int? timestamp,
     bool? success,
     String? message,
-    String? code,
+    int? code,
     T? data,
   }) = _BaseResponseModel;
 
