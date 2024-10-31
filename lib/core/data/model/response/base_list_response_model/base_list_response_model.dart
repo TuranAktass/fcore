@@ -11,9 +11,9 @@ class BaseListResponseModel<T> {
     message = json["message"];
     errorCode = json["errorCode"];
     success = json["success"];
-    if (json["dataSet"] != null) {
+    if (json["data"] != null) {
       dataSet = [];
-      json["dataSet"].forEach((element) => {dataSet!.add(fromJsonT(element))});
+      json["data"].forEach((element) => {dataSet!.add(fromJsonT(element))});
     }
   }
 }
